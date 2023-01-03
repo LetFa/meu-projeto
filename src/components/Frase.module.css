@@ -1,0 +1,17 @@
+.frase{
+  color: white;
+  font-weight: bold;
+  font-size: 15pt;
+}
+
+.frase_paragrafo{
+  background-color: cadetblue;
+}
+
+
+.frase_ajuda{
+  background-color: tomato;
+  padding: 50px 50px;
+}
+
+
