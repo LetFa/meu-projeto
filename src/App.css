@@ -1,5 +1,11 @@
-.App {
-    text-align: center;
+.App h2{
+  color: #DC143C;
+  text-align: center;
+  font-size: 23pt;
+}
+.App p {
+  text-align: center;
+  font-size: 17pt;
 }
 
 
