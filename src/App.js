@@ -1,14 +1,13 @@
 import './App.css'
-import List from './components/List';
+import Teste from './components/Teste';
+
 
 function App() {
 
-
   return (
     <div className="App">
-       <h2>Estudando React</h2>
-       <p>Avançando no Props</p>
-       <List />
+       <h2>Testando Eventos</h2>
+       <Teste />
     </div>
   );
 }
