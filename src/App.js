@@ -1,5 +1,6 @@
 import './App.css'
-import Teste from './components/Teste';
+import Eventos from './components/Eventos';
+
 
 
 function App() {
@@ -7,7 +8,7 @@ function App() {
   return (
     <div className="App">
        <h2>Testando Eventos</h2>
-       <Teste />
+       <Eventos  />
     </div>
   );
 }

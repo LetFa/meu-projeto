@@ -1,35 +1,33 @@
-import { useState} from 'react'
+import { useState } from "react";
 
 function Form(){
-
-  function cadastrarUsuario(e){
+  
+  function cadastrar(e){
     e.preventDefault()
-       console.log(`Senha do usuário ${name} é: ${password}`)
+    console.log(`Usuário do email ${email} foi cadastrado com a senha: ${password}`)
   }
 
-  const [name, setName] = useState()
+  const [email, setEmail] = useState()
   const [password, setPassword] = useState()
 
    return(
-     <div>
-      <h1>Meu Cadastro</h1>
-      <form onSubmit={cadastrarUsuario}>
-        <div>
-          <label htmlFor="name">Nome:</label>
-          <input type="text" id="name" name="name" placeholder='Informe seu nome' onChange={(e) => setName(e.target.value)} value={name}></input>
-        </div>
-        <div>
-           <label htmlFor="password">Senha:</label>
-           <input type="password" id="password" name="password" placeholder='Informe sua senha' onChange={(e) => setPassword(e.target.value)} value={password}></input>
-        </div>
-        <div>
-           <input type="submit" value="cadastrar"></input>
-        </div>
+     <>
+      <h1>Teste de Formulario Hook</h1>
+      <form onSubmit={cadastrar}>
+         <div>
+          <label htmlFor="email">Email:</label>
+          <input type="email" name="email" id="email" placeholder="teste@gmail.com" onChange={(e) => setEmail(e.target.value)} value={email}></input>
+         </div>
+         <div>
+          <label htmlFor="password">Senha:</label>
+          <input type="password" name="password" id="password" placeholder="senha" onChange={(e) => setPassword(e.target.value)} value={password}></input>
+         </div>
+         <div>
+          <button type="submit">Cadastrar</button>
+         </div>
       </form>
-     </div>
+     </>
    );
 }
-
-
 
 export default Form
