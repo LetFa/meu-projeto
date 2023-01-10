@@ -1,12 +1,20 @@
 import './App.css'
-import Condicional from './components/Condicional';
+import OutraList from './components/OutraList';
+import NomesList from './components/NomesList';
 
 function App() {
 
+  const meusItens = ["react", "vue", "angular"];
+  const nomesItens = ["leticia", "larissa", "luciana", "robson"];
+
+
   return (
     <div className="App">
-      <h1>Renderização Condicional</h1>
-      <Condicional />
+      <h1>Renderização de listas</h1>
+      <OutraList itens={meusItens} />
+      <OutraList itens={[]} />
+      <NomesList nomes={nomesItens} />
+      <NomesList nomes={[]} />
     </div>
   );
 }
